@@ -15,4 +15,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-MIT. Please see the [license file](license.md) for more information.
+MIT. Please see the [license file](LICENSE.md) for more information.
