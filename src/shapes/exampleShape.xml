@@ -1,0 +1,26 @@
+<Shape id="triangle" displayName="Triangle" icon="Icons/triangle.png">  
+      <Properties>  
+        <PropertyGroup>  
+          <Property name="a" displayName="Point" type="Handle">0,0</Property>  
+          <Property name="b" displayName="Point" type="Handle">90,0</Property>  
+          <Property name="c" displayName="Point" type="Handle">45,60</Property>  
+        </PropertyGroup>  
+        <PropertyGroup name="Border">  
+          <Property name="strokeColor" displayName="Line Color"  
+                    type="Color">#1B3280ff</Property>  
+          <Property name="strokeStyle" displayName="Line Style"  
+                    type="StrokeStyle">2|</Property>  
+        </PropertyGroup>  
+      </Properties>  
+      <Behaviors>  
+        <For ref="path">  
+          <StrokeColor>$strokeColor</StrokeColor>  
+          <StrokeStyle>$strokeStyle</StrokeStyle>  
+          <D>[M($a.x, $a.y), L($b.x, $b.y), L($c.x, $c.y), z]</D>  
+        </For>  
+      </Behaviors>  
+      <p:Content xmlns:p="http://www.evolus.vn/Namespace/Pencil"  
+                 xmlns="http://www.w3.org/2000/svg">  
+        <path id="path" fill="none" style="stroke-linejoin: round;" />  
+      </p:Content>  
+</Shape>  

@@ -1,50 +1,41 @@
-<Shape id="helloworld" displayName="Hello World"  
-        icon="icons/button.png">  
-  <Properties>  
-    <PropertyGroup name="Text">  
-      <Property name="label" displayName="Label"   
-                type="PlainText">Hello World</Property>  
-      <Property name="textColor" displayName="Color"  
-                type="Color">#000000ff</Property>  
-      <Property name="textFont"  
-                displayName="Font"  
-                type="Font">Arial|normal|normal|15px</Property>  
-    </PropertyGroup>  
-  </Properties>  
-  <Behaviors>  
-    <For ref="text">  
-      <TextContent>$label</TextContent>  
-      <Fill>$textColor</Fill>  
-      <Font>$textFont</Font>  
-      <BoxFit>   
-        <Arg>new Bound(0, 0, 100, 12)</Arg>  
-        <Arg>new Alignment(0, 1)</Arg>  
-      </BoxFit>  
-    </For>  
-  </Behaviors>  
-  <p:Content xmlns:p="ahttp://www.evolus.vn/Namespace/Pencil"  
-              xmlns="http://www.w3.org/2000/svg">  
-  <g
-     transform="translate(0,-287.73962)"
-     id="layer1">
-    <rect
-       ry="1.2856823"
-       y="287.86993"
-       x="0.13031815"
-       height="8.9997797"
-       width="47.364365"
-       id="rect10"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2606363;stroke-opacity:1" />
-    <text
-       id="text819"
-       y="293.92502"
-       x="17.14159"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:139.55000305;font-family:arial;-inkscape-font-specification:arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         style="font-size:4.58611107px;stroke-width:0.26458332"
-         y="293.92502"
-         x="17.14159"
-         id="tspan817"> <text id="text" /></tspan></text>
-  </g> 
-  </p:Content>  
+<Shape id="button" displayName="Button" icon="icons/button.png">
+    <Properties>
+    <PropertyGroup>
+			<Property name="textContent" displayName="Text Content" type="PlainText"><![CDATA[Button]]></Property>
+		</PropertyGroup>
+    </Properties>
+    <Behaviors>
+        <For ref="tspan817">
+            <PlainTextContent>
+				<Arg>$textContent</Arg>
+            </PlainTextContent>
+        </For>
+    </Behaviors>
+
+    <p:Content>
+        <g transform="translate(0,-287.73962)" id="layer1">
+            <rect
+            ry="1.2856823"
+            y="287.86993"
+            x="0.13031815"
+            height="8.9997797"
+            width="47.364365"
+            id="rect10"a
+            style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2606363;stroke-opacity:1" />
+            <text
+            id="text819"
+            y="293.92502"
+            x="17.14159"
+            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:139.55000305;font-family:arial;-inkscape-font-specification:arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+            xml:space="preserve">
+                <tspan
+                style="font-size:4.58611107px;stroke-width:0.26458332"
+                y="293.92502"
+                x="17.14159"
+                id="tspan817">
+                
+                </tspan>
+            </text>
+        </g>
+    <p:Content>
 </Shape>

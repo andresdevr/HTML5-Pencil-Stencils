@@ -1,0 +1,4 @@
+<PropertyGroup name="Text">
+    <Property name="textFont" type="Font" displayName="Default Font">"Helvetica Neue", Helvetica, Arial, sans-serif|400|normal|14px</Property>
+    <Property name="textColor" type="Color" displayName="Default Text Color">#000000ff</Property>
+</PropertyGroup>
