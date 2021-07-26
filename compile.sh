@@ -1,8 +1,35 @@
 definition="Definition.xml"
-cat init.xml > $definition
-for file in "src/*"
+documentStart="src/definitionStart.xml"
+documentEnd="src/definitionEnd.xml"
+shapesFolder="src/shapes/*"
+propertiesStart="src/propertiesStart.xml"
+propertiesEnd="src/propertiesEnd.xml"
+propertiesFolder="src/properties/*"
+scriptsStart="src/scriptsStart.xml"
+scriptsEnd="src/scriptsEnd.xml"
+scriptsFolder="src/scripts/*"
+
+cat $documentStart > $definition
+
+#properties
+cat $propertiesStart >> $definition
+for file in $propertiesFolder
 do
 	cat $file >> $definition
 done
+cat $propertiesEnd >> $definition
 
-cat end.xml >> $definition
+#scripts
+cat $scriptsStart >> $definition
+for file in $scriptsFolder
+do
+	cat $file >> $definition
+done
+cat $scriptsEnd >> $definition
+
+#shapes
+for file in $shapesFolder
+do
+	cat $file >> $definition
+done
+cat $documentEnd >> $definition
